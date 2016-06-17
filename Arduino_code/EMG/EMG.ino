@@ -2,10 +2,11 @@
  * RECOPIE DE MOUVEMENT (copy of motion), 2016
  * Update: 06/06/16
  *
- * Installation connecting...
+ * Installation that allows a person to take control of the arm of another person
  * with EMG Grove > Arduino > Relay > TENS3000
  * 
  * V1.0
+ * Base on BackyardBrain shiled
  * Written by Bastien DIDIER
  * more info : http://one-billion-cat.com/
  *
@@ -43,8 +44,7 @@ int static_analog_dta   = 0;                // static analog data
 int max_analog_dta      = 350;              // max analog data
 int min_analog_dta      = 100;              // min analog data
 
-
-// get analog emgue
+// get analog setup
 int getAnalog(int pin)
 {
     long sum = 0;
